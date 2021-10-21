@@ -1,0 +1,15 @@
+development:
+  adapter: postgresql
+  url: postgresql://postgres@localhost:5432/ninja_app
+  pool: 5
+
+test:
+  adapter: postgresql
+  url: postgresql://postgres@localhost:5432/ninja_app_test
+  pool: 5
+
+production:
+  adapter: postgresql
+  database: super_ninja_rockstar_app_production
+  username: super_ninja_rockstar_app
+  password: <%= ENV['SUPER_NINJA_ROCKSTAR_APP_DATABASE_PASSWORD'] %>
