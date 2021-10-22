@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> Wymagania
 
-Things you may want to cover:
+- RVM or RBENV
+- Ruby 3.0.2
+- Rails 6.1.4.1
 
-* Ruby version
+### Pierwsze uruchomienie
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. Uzupełnij plik `config/database.yml` o właściwego użytkownika oraz bazę danych dla `development` oraz `test`
+2. Wykonaj `bundle install`
+3. Wykonaj `yarn`
+4. Wykonaj `rails db:create db:migrate`
+ 
+ 
+ Do uruchomienia testów używana jest komenda `rspec`
